@@ -1,0 +1,14 @@
+<p *ngIf="show">
+  dashboard works!
+</p>
+<img [src]="imageUrl"
+     alt="">
+
+<br>
+
+<app-card [imageUrl]="'https://media2.giphy.com/media/13fjcmvKo45MBO/200.webp?cid=3640f6095bfdd8cf444e364f3270ccff'"
+          (zoomImage)="onZoomImage($event)"></app-card>
+
+<br>
+
+{{showEmoji | emoji}}
